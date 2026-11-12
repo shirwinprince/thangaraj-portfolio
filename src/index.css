@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #FAF9F6;
+    color: #1E293B;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Organic fluid blob inspired by modern editorial agency portfolios */
+.organic-portrait-mask {
+  border-radius: 56% 44% 62% 38% / 44% 58% 42% 56%;
+  transition: border-radius 0.7s ease-in-out, transform 0.5s ease;
+}
+
+.organic-portrait-mask:hover {
+  border-radius: 48% 52% 45% 55% / 52% 44% 56% 48%;
+  transform: scale(1.015);
+}
+
+/* Subtle dot pattern for high-trust contrast banners */
+.bg-grid-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
